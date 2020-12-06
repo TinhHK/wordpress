@@ -1,0 +1,2 @@
+- create new file named: new-config, include in wp-config
+- change front-end, back-end url in that file to prevent users editing it.
