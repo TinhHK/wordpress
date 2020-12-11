@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c3abe6f-8ead-45ee-9fa8-7fac16d0e641" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lessons/1_configuration/config.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new-config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/mrktinh/mrktinh.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/new-config.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +65,11 @@
       <workItem from="1606997184431" duration="3592000" />
       <workItem from="1607043666688" duration="2992000" />
       <workItem from="1607091844637" duration="738000" />
-      <workItem from="1607265921417" duration="3216000" />
+      <workItem from="1607265921417" duration="3425000" />
+      <workItem from="1607344314141" duration="1784000" />
+      <workItem from="1607488657665" duration="1863000" />
+      <workItem from="1607502327710" duration="5100000" />
+      <workItem from="1607694534145" duration="596000" />
     </task>
     <servers />
   </component>
@@ -82,6 +86,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2718" y="453" key="#WordPress" timestamp="1606997597481">
@@ -92,14 +97,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680/1920.9.1920.1040@0.0.1280.680" timestamp="1607045961757" />
+    <state x="477" y="264" key="NewPhpFileDialog" timestamp="1607517170315">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="477" y="264" key="NewPhpFileDialog/0.0.1280.680/1920.9.1920.1040@0.0.1280.680" timestamp="1607517170315" />
     <state x="362" y="82" width="540" height="524" key="StructurePopup" timestamp="1607046261699">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="362" y="82" width="540" height="524" key="StructurePopup/0.0.1280.680/1920.9.1920.1040@0.0.1280.680" timestamp="1607046261699" />
-    <state x="346" y="73" width="589" height="534" key="find.popup" timestamp="1607046027189">
+    <state x="346" y="73" width="589" height="534" key="find.popup" timestamp="1607518313420">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="346" y="73" width="589" height="534" key="find.popup/0.0.1280.680/1920.9.1920.1040@0.0.1280.680" timestamp="1607046027189" />
+    <state x="346" y="73" width="589" height="534" key="find.popup/0.0.1280.680/1920.9.1920.1040@0.0.1280.680" timestamp="1607518313420" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>D:\Projects\php7.4\htdocs\wordpress</wordpressPath>
