@@ -18,4 +18,5 @@ if(is_admin()) {
     require_once dirname(__FILE__).'/includes/admin.php';
 } else {
     require_once dirname(__FILE__).'/includes/public.php';
+    echo admin_url('/css/about.css', __FILE__);
 }
