@@ -14,3 +14,8 @@ function mrktinh_debug()
     print_r($wpdb->queries);
 }
 add_action('wp_footer', 'mrktinh_debug');
+if(is_admin()) {
+    require_once dirname(__FILE__).'/includes/admin.php';
+} else {
+    require_once dirname(__FILE__).'/includes/public.php';
+}
