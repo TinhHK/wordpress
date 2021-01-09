@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c3abe6f-8ead-45ee-9fa8-7fac16d0e641" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/css/my-style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/2_action_hook.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/2_action_hook.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/mrk-plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/mrk-plugin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,14 +108,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680/1920.9.1920.1040@0.0.1280.680" timestamp="1609340059959" />
-    <state x="362" y="82" width="540" height="524" key="StructurePopup" timestamp="1607046261699">
+    <state x="362" y="82" width="540" height="524" key="StructurePopup" timestamp="1610183317000">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="362" y="82" width="540" height="524" key="StructurePopup/0.0.1280.680/1920.9.1920.1040@0.0.1280.680" timestamp="1607046261699" />
+    <state x="362" y="82" width="540" height="524" key="StructurePopup/0.0.1280.680/1920.9.1920.1040@0.0.1280.680" timestamp="1610183317000" />
     <state x="346" y="73" width="589" height="534" key="find.popup" timestamp="1607518313420">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="346" y="73" width="589" height="534" key="find.popup/0.0.1280.680/1920.9.1920.1040@0.0.1280.680" timestamp="1607518313420" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1610183309278">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.9.1920.1040@0.0.1280.680" timestamp="1610183309278" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>D:\Projects\php7.4\htdocs\wordpress</wordpressPath>
