@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c3abe6f-8ead-45ee-9fa8-7fac16d0e641" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/1.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/2_action_hook.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/1.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/1_plugin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/mrk-plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/mrk-plugin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,10 +101,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680/1920.9.1920.1040@0.0.1280.680" timestamp="1607045961757" />
-    <state x="477" y="264" key="NewPhpFileDialog" timestamp="1609326576202">
+    <state x="477" y="264" key="NewPhpFileDialog" timestamp="1610178503129">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="477" y="264" key="NewPhpFileDialog/0.0.1280.680/1920.9.1920.1040@0.0.1280.680" timestamp="1609326576202" />
+    <state x="477" y="264" key="NewPhpFileDialog/0.0.1280.680/1920.9.1920.1040@0.0.1280.680" timestamp="1610178503129" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1609340059959">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
