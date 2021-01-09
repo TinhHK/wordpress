@@ -58,3 +58,16 @@ function mrk_plg_deactive()
         ['%s']
     );
 }
+
+//=========== uninstall hook, delete plugin files =============
+register_uninstall_hook(__FILE__, 'mrk_uninstall_plg');
+function mrk_uninstall_plg()
+{
+    global $wpdb;
+    delete_option('mrk_plugin_option');
+    delete_option('mrk_plugin_version');
+    delete_option('mrk_pl_version');
+    $table_name = $wpdb->prefix.'abc';
+    $sql = "Drop table if exists $table_name";
+    $wpdb->query($sql);
+}
