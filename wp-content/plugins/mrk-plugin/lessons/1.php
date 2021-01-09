@@ -43,3 +43,18 @@ function mrk_active() {
     // if option name is existing, nothing is recorded
     add_option("mrk_plugin_option", $mrk_plugin_option, '', 'yes');
 }
+
+//===================== Deactive plugin ======================
+register_deactivation_hook(__FILE, 'mrk_plg_deactive');
+function mrk_plg_deactive()
+{
+    global $wpdb;
+    $table_name = $wpdb->prefix.'options';
+    $wpdb->update(
+        $table_name,
+        ['autoload' => 'no'],
+        ['option_name' => 'mrk_plugin_option'],
+        ['%s'],
+        ['%s']
+    );
+}
