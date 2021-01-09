@@ -31,3 +31,25 @@ remove_all_actions('wp_head');
 
 //============ check action is existed or not, return priority =================
 has_action('wp_head', 'mrk_add_css');
+
+//=========== create an new action hook ===============
+add_action('mrk_hook', 'mrk_action_callback');
+function mrk_action_callback()
+{
+    echo "<div> Create the hook successfully </div>";
+}
+function mrk_new_hook()
+{
+    do_action('mrk_hook');
+}
+
+//========= create a new hook with argument ==============
+add_action('mrk_footer_hook', 'show_info', 10, 3);
+function show_info($name, $age, $sex)
+{
+    echo "Mr/Ms $name is $age years old and $sex";
+}
+function mrk_show_info()
+{
+    do_action('mrk_footer_hook', 'Mrktinh', 31, 'male');
+}

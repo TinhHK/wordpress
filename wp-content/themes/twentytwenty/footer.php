@@ -55,6 +55,11 @@
 
 			</footer><!-- #site-footer -->
 
+        <?php
+//            do_action('mrk_hook');
+//            mrk_new_hook();
+//            mrk_show_info();
+        ?>
 		<?php wp_footer(); ?>
 
 	</body>
