@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c3abe6f-8ead-45ee-9fa8-7fac16d0e641" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lessons/4_action_hook/8_create_an_new_hook.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/2_action_hook.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/2_action_hook.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/mrk-plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/mrk-plugin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwenty/footer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +74,7 @@
       <workItem from="1607694534145" duration="5003000" />
       <workItem from="1609313875086" duration="10687000" />
       <workItem from="1610174527204" duration="485000" />
+      <workItem from="1610280962068" duration="1835000" />
     </task>
     <servers />
   </component>

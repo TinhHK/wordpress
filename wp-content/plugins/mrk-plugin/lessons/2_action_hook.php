@@ -53,3 +53,49 @@ function mrk_show_info()
 {
     do_action('mrk_footer_hook', 'Mrktinh', 31, 'male');
 }
+
+//============ use class for action =================
+class MrkPlugin
+{
+    public function newFooter()
+    {
+        echo "<div>Use class for action </div>";
+    }
+    public function newFooter2()
+    {
+        echo "<div>Use class for action 2</div>";
+    }
+}
+
+$mrk= new MrkPlugin();
+add_action('wp_footer', [$mrk, 'newFooter']);
+add_action('wp_footer', [$mrk, 'newFooter2']);
+
+class MrkPlugin2
+{
+    public function __construct(){
+        add_action('wp_footer', [$this, 'newFooter']);
+    }
+    public function newFooter()
+    {
+        echo "<div>Use class for action </div>";
+    }
+    public function newFooter2()
+    {
+        echo "<div>Use class for action 2</div>";
+    }
+}
+new MrkPlugin2();
+
+class MrkPlugin3
+{
+    public static function init()
+    {
+        add_action('wp_footer', [__CLASS__, 'newFooter']);
+    }
+    public static function newFooter()
+    {
+        echo "<div>This is called by static </div>";
+    }
+}
+MrkPlugin3::init();

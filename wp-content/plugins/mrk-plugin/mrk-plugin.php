@@ -8,5 +8,3 @@ Version: 1.0
 Author URI: http://mrktinh.com
  */
 
-
-
