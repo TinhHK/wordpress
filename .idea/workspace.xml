@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c3abe6f-8ead-45ee-9fa8-7fac16d0e641" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/3_filter_hook.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/includes/support.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/includes/public.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/includes/public.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/mrk-plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/mrk-plugin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +76,7 @@
       <workItem from="1609313875086" duration="10687000" />
       <workItem from="1610174527204" duration="485000" />
       <workItem from="1610280962068" duration="3630000" />
-      <workItem from="1610465615967" duration="797000" />
+      <workItem from="1610465615967" duration="1615000" />
     </task>
     <servers />
   </component>
