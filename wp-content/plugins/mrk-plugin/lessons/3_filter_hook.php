@@ -12,6 +12,10 @@ class MrkMP
         remove_filter('the_content', 'convert_smilies');
         // remove all filter of the content hook with priority is 10, other priorities are not removed
         remove_all_filters('the_content', 10);
+        if(has_filter('the_content', 'convert_smilies') != null) {
+            remove_filter('the_content', 'convert_smilies');
+            add_filter('the_content', [$this, 'keepText']);
+        }
 
     }
     //======== add filter hook to change title with post having id = 1 =============
@@ -35,6 +39,11 @@ class MrkMP
             $content = str_replace('WordPress', "<a>WP</a>", $content);
             return "Mrktinh content was here".$content;
         }
+        return $content;
+    }
+    // keep raw text instead of icon
+    public function keepText($content)
+    {
         return $content;
     }
 }
