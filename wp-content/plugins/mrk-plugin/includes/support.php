@@ -1,6 +1,6 @@
 <?php
 
-class ZendvnMpSupport{
+class MrkPLSupport{
 
 	public static function showFunc($tag=false){
 		global $wp_filter;
@@ -19,7 +19,7 @@ class ZendvnMpSupport{
 		echo '<div style="color: black;font-family: Courier New;">';
 		foreach($hook as $tag => $priority){
 			echo "Hook Name: <strong>$tag</strong><br /><br />";
-			ksort($priority);
+//			ksort($priority);
 			foreach($priority as $priority => $function){
 				$comma_flag = 0;
 				echo $priority.": ";
