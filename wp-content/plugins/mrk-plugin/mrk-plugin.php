@@ -11,7 +11,9 @@ Author URI: http://mrktinh.com
 define('MRK_PLUGIN_URL', plugin_dir_url(__FILE__) );
 define('MRK_PLUGIN_DIR', plugin_dir_path(__FILE__));
 
-if(!is_admin()){
-    require_once MRK_PLUGIN_DIR.'/includes/public.php';
-    new MrkMP();
+if(is_admin()){
+    require MRK_PLUGIN_DIR.'/includes/admin.php';
+    new MrkMpAdmin();
 }
+require_once MRK_PLUGIN_DIR.'/includes/public.php';
+new MrkMP();
