@@ -1,0 +1,1 @@
+<h2>My help page</h2>
