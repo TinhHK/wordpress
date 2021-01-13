@@ -5,7 +5,15 @@ class MrkMpAdmin
     public function __construct()
     {
         add_action('admin_menu', [$this, 'settingMenu']);
+        add_action('admin_menu', [$this, 'removeMenu']);
     }
+    // remove an existing menu
+    public function removeMenu()
+    {
+        $menuSlug = 'mrk-menu';
+        remove_submenu_page($menuSlug, $menuSlug.'-about');
+    }
+
     // add submenu to Dashboard
     public function settingMenu()
     {
@@ -15,7 +23,8 @@ class MrkMpAdmin
             'Mrk submenu',
             'manage_options',
             $menuSlug,
-            [$this, 'settingPage']
+            [$this, 'settingPage'],
+            1
         );
     }
     public function settingPage()
@@ -33,7 +42,8 @@ class MrkMpAdmin
             'manage_options',
             $menuSlug,
             [$this, 'settingPage'],
-            MRK_PLUGIN_URL.'/images/icon.png'
+            MRK_PLUGIN_URL.'/images/icon.png',
+            3
         );
         // add submenu to a new menu
         add_submenu_page(

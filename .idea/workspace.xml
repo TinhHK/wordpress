@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c3abe6f-8ead-45ee-9fa8-7fac16d0e641" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/views/setting-page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lessons/6_admin_menu/7_add_menu_to_a_new_menu_at_a_position.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lessons/6_admin_menu/8_delete_an_existing_menu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lessons/6_admin_menu/9_add_object_page.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/includes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/includes/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/4_admin_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/4_admin_menu.php" afterDir="false" />
@@ -80,7 +82,7 @@
       <workItem from="1610174527204" duration="485000" />
       <workItem from="1610280962068" duration="3630000" />
       <workItem from="1610465615967" duration="7361000" />
-      <workItem from="1610544160377" duration="3883000" />
+      <workItem from="1610544160377" duration="5405000" />
     </task>
     <servers />
   </component>
