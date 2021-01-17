@@ -6,6 +6,7 @@ class MrkMpAdmin
         add_action('admin_init', [$this, 'mrkAddVersion']);
         add_action('admin_init', [$this, 'mrkAddSome']);
         add_action('admin_init', [$this, 'mrkAddArray']);
+        add_action('admin_init', [$this, 'mrkGetOption']);
     }
 
     public function mrkAddVersion()
@@ -24,6 +25,12 @@ class MrkMpAdmin
             'age'  => 31
         ];
         add_option('mrk_plugin_array', $arr, '', 'yes');
+    }
+    // get option value by name
+    public function mrkGetOption()
+    {
+        $mrktinh = get_option('mrk_plugin_array', ['name' => 'Hey Mr']);
+        echo "<h1>{$mrktinh['name']}</h1>";
     }
 
 

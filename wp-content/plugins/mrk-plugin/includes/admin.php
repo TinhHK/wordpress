@@ -4,11 +4,14 @@ class MrkMpAdmin
 {
     public function __construct()
     {
-        add_action('admin_init', [$this, 'mrkAddVersion']);
-        add_action('admin_init', [$this, 'mrkAddSome']);
-        add_action('admin_init', [$this, 'mrkAddArray']);
+        add_action('admin_init', [$this, 'mrkGetOption']);
     }
 
+    public function mrkGetOption()
+    {
+        $mrktinh = get_option('mrk_plugin_array', ['name' => 'Hey Mr']);
+        echo "<h1>{$mrktinh['name']}</h1>";
+    }
     public function mrkAddVersion()
     {
         add_option('mrk_plugin_version', '1.0');
