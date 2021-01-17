@@ -31,6 +31,9 @@ class MrkMpAdmin
             [$this, 'main_section_view'], $this->_menuSlug);
         add_settings_field('mrk_plg_slogin', 'Slogan',
                             [$this, 'slogin_input'], $this->_menuSlug, $extendSection);
+        // add field with no section
+        add_settings_field('mrk_plg_security_code', '',
+                            [$this, 'security_code_input'], $this->_menuSlug, 'custom-section');
     }
     public function validateSetting($inputs)
     {
@@ -49,6 +52,11 @@ class MrkMpAdmin
     {
         echo '<input type="text" name="mrktinh_plugin_name[mrk_plg_slogan]" 
             value="'.$this->_settingOptions['mrk_plg_slogan'].'"/>';
+    }
+    public function security_code_input()
+    {
+        echo 'Security code <br>';
+        echo '<input type="text" name="mrktinh_plugin_name[mrk_plg_security_code]" value=""/>';
     }
 
     // add menu
