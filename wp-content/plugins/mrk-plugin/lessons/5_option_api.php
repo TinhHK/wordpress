@@ -1,5 +1,4 @@
 <?php
-require_once MRK_PLUGIN_DIR.'/includes/support.php';
 class MrkMpAdmin
 {
     public function __construct()
@@ -15,6 +14,7 @@ class MrkMpAdmin
     }
     public function mrkAddSome()
     {
+        // autoload will be yes :))
         add_option('mrk_plugin_some2', 'hey hey', '', 'No');
     }
     public function mrkAddArray()
