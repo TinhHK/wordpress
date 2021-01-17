@@ -32,6 +32,24 @@ class MrkMpAdmin
         $mrktinh = get_option('mrk_plugin_array', ['name' => 'Hey Mr']);
         echo "<h1>{$mrktinh['name']}</h1>";
     }
+    // udpate option autoload
+    function updateAuto()
+    {
+        $op = get_option('mrk_plugin_some');
+        update_option('mrk_plugin_some', $op, '', 'yes');
+    }
+    // update an value in array option
+    function updateAge()
+    {
+        $arr = get_option('mrk_plugin_array', []);
+        $arr['age'] = 32;
+        update_option('mrk_plugin_array', $arr);
+    }
+    // delete an option name
+    function deleteOp()
+    {
+        delete_option('mrk_plugin_some2');
+    }
 
 
 
