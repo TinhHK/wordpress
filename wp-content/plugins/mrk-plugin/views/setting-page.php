@@ -4,5 +4,8 @@
     <form action="options.php" method="post" id="mrktinh-form-setting" enctype="multipart/form-data">
         <?php  echo settings_fields('mrktinh_plugin_options') ?>
         <?php echo do_settings_sections($this->_menuSlug) ?>
+        <p class="submit">
+            <input type="submit" name="submit" id="submit" class="button button-primary" value="Save Changes">
+        </p>
     </form>
 </div>

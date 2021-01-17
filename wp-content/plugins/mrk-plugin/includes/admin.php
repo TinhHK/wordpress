@@ -3,8 +3,10 @@ require_once MRK_PLUGIN_DIR.'/includes/support.php';
 class MrkMpAdmin
 {
     private $_menuSlug = 'mrktinh-plugin-setting';
+    private $_settingOptions;
     public function __construct()
     {
+        $this->_settingOptions = get_option('mrktinh_plugin_name', []);
         add_action('admin_menu', [$this, 'addMenu']);
         add_action('admin_init', [$this, 'registerSettingAndFields']);
 
@@ -16,18 +18,23 @@ class MrkMpAdmin
             [$this, 'validateSetting']);
         $mainSection = 'mrk_plg_main_section';
         $extendSection = 'mrk_plg_extend_section';
-        // add section to view
+
+        // add section to view MAIN SETTING
         add_settings_section($mainSection, 'Main setting',
             [$this, 'main_section_view'], $this->_menuSlug);
         // add a field to section
         add_settings_field('mrk_plg_new_title', 'Site title',
             [$this, 'new_title_input'], $this->_menuSlug, $mainSection);
+
+        // EXTEND SETTING
         add_settings_section($extendSection, 'Extend setting',
             [$this, 'main_section_view'], $this->_menuSlug);
+        add_settings_field('mrk_plg_slogin', 'Slogan',
+                            [$this, 'slogin_input'], $this->_menuSlug, $extendSection);
     }
-    public function validateSetting()
+    public function validateSetting($inputs)
     {
-
+       return $inputs;
     }
     public function main_section_view()
     {
@@ -35,7 +42,13 @@ class MrkMpAdmin
     }
     public function new_title_input()
     {
-        echo '<input type="text" name="mrktinh_plugin_name[mrk_plg_new_title]" value=""/>';
+        echo '<input type="text" name="mrktinh_plugin_name[mrk_plg_new_title]" 
+            value="'.$this->_settingOptions['mrk_plg_new_title'].'"/>';
+    }
+    public function slogin_input()
+    {
+        echo '<input type="text" name="mrktinh_plugin_name[mrk_plg_slogan]" 
+            value="'.$this->_settingOptions['mrk_plg_slogan'].'"/>';
     }
 
     // add menu
