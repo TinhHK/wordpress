@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0c3abe6f-8ead-45ee-9fa8-7fac16d0e641" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lessons/url.md" beforeDir="false" afterPath="$PROJECT_DIR$/lessons/url.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/includes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/includes/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/5_option_api.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/5_option_api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +87,7 @@
       <workItem from="1610563994830" duration="384000" />
       <workItem from="1610814006735" duration="1398000" />
       <workItem from="1610817211824" duration="984000" />
-      <workItem from="1610857302597" duration="7909000" />
+      <workItem from="1610857302597" duration="8476000" />
     </task>
     <servers />
   </component>

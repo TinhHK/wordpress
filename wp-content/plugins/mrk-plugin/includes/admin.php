@@ -2,55 +2,5 @@
 require_once MRK_PLUGIN_DIR.'/includes/support.php';
 class MrkMpAdmin
 {
-    public function __construct()
-    {
-        add_action('admin_init', [$this, 'mrkGetOption']);
-        add_action('admin_init', [$this, 'updateAge']);
-        add_action('admin_init', [$this, 'deleteOp']);
-        add_action('admin_init', [$this, 'updateAuto']);
-    }
-
-    // udpate option autoload
-    function updateAuto()
-    {
-        $op = get_option('mrk_plugin_some');
-        update_option('mrk_plugin_some', $op, '', 'yes');
-    }
-    // update an value in array option
-    function updateAge()
-    {
-        $arr = get_option('mrk_plugin_array', []);
-        $arr['age'] = 32;
-        update_option('mrk_plugin_array', $arr);
-    }
-    // delete an option name
-    function deleteOp()
-    {
-        delete_option('mrk_plugin_some2');
-    }
-
-    public function mrkGetOption()
-    {
-        $mrktinh = get_option('mrk_plugin_array', ['name' => 'Hey Mr']);
-        echo "<h1>{$mrktinh['name']}</h1>";
-    }
-    public function mrkAddVersion()
-    {
-        add_option('mrk_plugin_version', '1.0');
-    }
-    public function mrkAddSome()
-    {
-        add_option('mrk_plugin_some2', 'hey hey', '', 'No');
-    }
-    public function mrkAddArray()
-    {
-        $arr = [
-            'name' => 'Mrktinh',
-            'age'  => 31
-        ];
-        add_option('mrk_plugin_array', $arr, '', 'yes');
-    }
-
-
 
 }
