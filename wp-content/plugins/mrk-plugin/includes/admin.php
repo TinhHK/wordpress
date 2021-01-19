@@ -29,10 +29,21 @@ class MrkMpAdmin
     }
     public function validateSetting($inputs)
     {
-        if(isset($_FILES['mrk_plg_logo']['name'])){
+        if(!empty($_FILES['mrk_plg_logo']['name'])){
             $override = ['test_form' => false];
             $fileInfo = wp_handle_upload($_FILES['mrk_plg_logo'], $override);
-            $inputs['mrk_plg_log'] = $fileInfo['url'];
+            $inputs['mrk_plg_logo'] = $fileInfo['url'];
+            // save path of image
+            $inputs['mrk_plg_logo_path'] = $fileInfo['file'];
+            // delete old image
+            if(!empty($this->_settingOptions['mrk_plg_logo_path'])){
+                // don't show error
+                @unlink($this->_settingOptions['mrk_plg_logo_path']);
+            }
+        }else {
+            // not upload a new image, keep old image in database
+            $inputs['mrk_plg_logo'] = $this->_settingOptions['mrk_plg_logo'];
+            $inputs['mrk_plg_logo_path'] = $this->_settingOptions['mrk_plg_logo_path'];
         }
         return $inputs;
     }
@@ -47,7 +58,11 @@ class MrkMpAdmin
     }
     public function logo_input()
     {
-        echo '<input type="file" name="mrk_plg_logo" />';
+        echo '<input type="file" name="mrk_plg_logo">';
+        if(!empty($this->_settingOptions['mrk_plg_logo'])){
+            echo '<div style="display:block;margin-top:20px"><img src="'.$this->_settingOptions['mrk_plg_logo'].'" width="200" /></div>';
+        }
+
     }
 
 
@@ -59,7 +74,7 @@ class MrkMpAdmin
             'Mrktinh Plugin Setting',
             'manage_options',
             $this->_menuSlug,
-            [$this, 'settingPage'],
+            [$this, 'settingPage']
         );
     }
     // content of the menu
