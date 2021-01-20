@@ -47,6 +47,8 @@
     <list default="true" id="0c3abe6f-8ead-45ee-9fa8-7fac16d0e641" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/includes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/includes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/setting_api.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/setting_api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/views/setting-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/views/setting-page.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +117,8 @@
       <workItem from="1610817211824" duration="984000" />
       <workItem from="1610857302597" duration="21467000" />
       <workItem from="1610986205616" duration="857000" />
-      <workItem from="1611068403801" duration="4071000" />
+      <workItem from="1611068403801" duration="4198000" />
+      <workItem from="1611153439092" duration="5723000" />
     </task>
     <servers />
   </component>
