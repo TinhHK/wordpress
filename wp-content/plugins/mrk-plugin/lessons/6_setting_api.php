@@ -26,6 +26,10 @@ class MrkMpAdmin
             [$this, 'makeForm'], $this->_menuSlug, $mainSection, ['name' => 'new_title']);
         add_settings_field('mrk_plg_logo', 'Logo',
             [$this, 'makeForm'], $this->_menuSlug, $mainSection, ['name' => 'new_logo']);
+
+        // add field with custom-section and no title to custom
+        add_settings_field('mrk_plg_security_code', '',
+            [$this, 'security_code_input'], $this->_menuSlug, 'custom-section');
     }
 
     public function makeForm($args)
@@ -40,7 +44,11 @@ class MrkMpAdmin
                 echo '<div style="display:block;margin-top:20px"><img src="'.$this->_settingOptions['mrk_plg_logo'].'" width="200" /></div>';
             }
         }
-
+    }
+    public function security_code_input()
+    {
+        echo 'Security code <br>';
+        echo '<input type="text" name="mrktinh_plugin_name[mrk_plg_security_code]" value=""/>';
     }
     public function validateSetting($inputs)
     {

@@ -47,8 +47,8 @@
     <list default="true" id="0c3abe6f-8ead-45ee-9fa8-7fac16d0e641" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/includes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/includes/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/setting_api.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/setting_api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/views/setting-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/views/setting-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/setting_api.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/lessons/6_setting_api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/mrk-plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/mrk-plugin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +60,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PHPCodeSnifferBlackList">
+    <option name="filePaths">
+      <option value="$PROJECT_DIR$/wp-content/plugins/mrk-plugin/includes/html.php" />
+    </option>
   </component>
   <component name="ProjectId" id="1l96uEx0D4HVxCRT4wxns6YbdAx" />
   <component name="ProjectLevelVcsManager">
@@ -118,7 +123,8 @@
       <workItem from="1610857302597" duration="21467000" />
       <workItem from="1610986205616" duration="857000" />
       <workItem from="1611068403801" duration="4198000" />
-      <workItem from="1611153439092" duration="5723000" />
+      <workItem from="1611153439092" duration="5975000" />
+      <workItem from="1611231396843" duration="6120000" />
     </task>
     <servers />
   </component>
@@ -151,6 +157,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="514" y="245" key="#PHP_CodeSniffer_Ignored_Files" timestamp="1611324089266">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="514" y="245" key="#PHP_CodeSniffer_Ignored_Files/0.0.1280.680/1920.9.1920.1040@0.0.1280.680" timestamp="1611324089266" />
     <state x="2718" y="453" key="#WordPress" timestamp="1606997597481">
       <screen x="1920" y="9" width="1920" height="1040" />
     </state>

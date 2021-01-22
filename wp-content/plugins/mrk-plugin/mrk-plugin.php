@@ -10,9 +10,11 @@ Author URI: http://mrktinh.com
 
 define('MRK_PLUGIN_URL', plugin_dir_url(__FILE__) );
 define('MRK_PLUGIN_DIR', plugin_dir_path(__FILE__));
+define('MRK_PLUGIN_INCLUDES', MRK_PLUGIN_DIR.'/includes');
 
 if(is_admin()){
     require MRK_PLUGIN_DIR.'/includes/admin.php';
+    require MRK_PLUGIN_INCLUDES.'/MrkHtml.php';
     new MrkMpAdmin();
 }
 require_once MRK_PLUGIN_DIR.'/includes/public.php';
