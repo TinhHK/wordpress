@@ -34,12 +34,20 @@ class MrkMpAdmin
 
     public function makeForm($args)
     {
+        $objHtml = new MrkHtml();
         if($args['name'] == 'new_title'){
-            echo '<input type="text" name="mrktinh_plugin_name[mrk_plg_new_title]" 
-            value="'.$this->_settingOptions['mrk_plg_new_title'].'"/>';
+            $attr = ['id' => 'mrk_plg_new_title', 'class' => 'abc'];
+            echo $objHtml->textbox(
+                'mrktinh_plugin_name[mrk_plg_new_title]',
+                $this->_settingOptions['mrk_plg_new_title'],
+                $attr);
+//            echo '<input type="text" name="mrktinh_plugin_name[mrk_plg_new_title]"
+//            value="'.$this->_settingOptions['mrk_plg_new_title'].'"/>';
         }
         if($args['name'] == 'new_logo'){
-            echo '<input type="file" name="mrk_plg_logo">';
+            $attr = ['id' => 'mrk_plg_logo', 'class' => 'abc'];
+            echo $objHtml->fileupload("mrk_plg_logo");
+//            echo '<input type="file" name="mrk_plg_logo">';
             if(!empty($this->_settingOptions['mrk_plg_logo'])){
                 echo '<div style="display:block;margin-top:20px"><img src="'.$this->_settingOptions['mrk_plg_logo'].'" width="200" /></div>';
             }

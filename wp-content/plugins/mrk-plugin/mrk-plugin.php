@@ -16,6 +16,13 @@ if(is_admin()){
     require MRK_PLUGIN_DIR.'/includes/admin.php';
     require MRK_PLUGIN_INCLUDES.'/MrkHtml.php';
     new MrkMpAdmin();
+} else {
+    require_once MRK_PLUGIN_DIR.'/includes/public.php';
+    new MrkMP();
 }
-require_once MRK_PLUGIN_DIR.'/includes/public.php';
-new MrkMP();
+require MRK_PLUGIN_DIR.'/widgets/MrkWidget.php';
+add_action('widgets_init', 'mrkWidget');
+function mrkWidget()
+{
+    register_widget('MrkWidget');
+}
