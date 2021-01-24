@@ -11,6 +11,25 @@ class MrkWidget extends WP_Widget
         ];
         $controlOptions = ['width' => '250px'];
         parent::__construct($idBase, $name, $widgetOptions, $controlOptions);
+//        add_action('wp_head', [$this, 'changeCss']);
+        add_action('wp_head', [$this, 'addCss']);
+    }
+    public function addCss()
+    {
+        $url = MRK_PLUGIN_URL.'css/simple-widget.css';
+        $output = '<link rel="stylesheet" href="'.$url.'" type="text/css" media="all">';
+        echo $output;
+    }
+    public function changeCss()
+    {
+        $output = "<style>
+                        .mrk-class-css {
+                            background-color: bisque;
+                            border: 1px solid rosybrown;
+                            padding: 10px;
+                        } 
+                    </style>";
+        echo $output;
     }
     // show at front-end
     public function widget($args, $instance)
