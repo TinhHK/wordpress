@@ -12,7 +12,16 @@ class MrkWidget extends WP_Widget
         $controlOptions = ['width' => '250px'];
         parent::__construct($idBase, $name, $widgetOptions, $controlOptions);
 //        add_action('wp_head', [$this, 'changeCss']);
-        add_action('wp_head', [$this, 'addCss']);
+//        add_action('wp_head', [$this, 'addCss']);
+        add_action('wp_enqueue_scripts', [$this, 'addCssUseReg']);
+    }
+    public function addCssUseReg()
+    {
+        wp_enqueue_style('simple-widget', MRK_PLUGIN_URL.'css/simple-widget.css', ['simple-widget-01', 'simple-widget-02'], '1.0', 'all');
+        wp_register_style('simple-widget-01', MRK_PLUGIN_URL.'css/simple-widget-01.css', [], '1.0', 'all');
+        wp_register_style('simple-widget-02', MRK_PLUGIN_URL.'css/simple-widget-02.css', [], '1.0', 'all');
+//        wp_enqueue_style('simple-widget-01');
+
     }
     public function addCss()
     {
