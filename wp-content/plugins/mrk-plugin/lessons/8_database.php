@@ -26,6 +26,23 @@ $where = ['id' => 20];
 $whereFormat = ['%d'];
 $wpdb->replace($table, ['title' => 'Mrkinh won a prize', 'picture' => 'abc.jpg'], $where, $format, $whereFormat);
 
+// delete a record, return 1 or false
+$where = ['id' => 20];
+$whereFormat = ['%s'];
+$wpdb->delete($table, $where, $whereFormat);
+
+// prepare sql query to safe query string and execute it
+$title = 'Mrktinh title';
+$picture = 'profile.png';
+$content = "For example, this is a content";
+$status = 1;
+$query = "insert into $table (`title`, `picture`, `content`, `status`)
+            values ('%s', '%s', '%s', '%d')";
+$sql = $wpdb->prepare($query, $title, $picture, $content, $status);
+$wpdb->query($sql);
+
+
+
 echo "<pre>";
 var_export($result);
 echo "</pre>";die;
