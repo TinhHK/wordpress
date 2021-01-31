@@ -13,8 +13,27 @@ class MrkWidget extends WP_Widget
         parent::__construct($idBase, $name, $widgetOptions, $controlOptions);
 //        add_action('wp_head', [$this, 'changeCss']);
 //        add_action('wp_head', [$this, 'addCss']);
+        // global variables contain css and js
+//        global $wp_styles;
+//        global $wp_scripts;
+        //wp_enqueue_script('myJs', MRK_PLUGIN_URL.'/js/myJs.js', ['jquery'], '1.0', true);
         add_action('wp_enqueue_scripts', [$this, 'addCssUseReg']);
+        add_action('wp_head', [$this, 'addJs']);
+        add_action('wp_enqueue_scripts', [$this, 'addJSUseReg']);
     }
+
+    public function addJs()
+    {
+        $outPut = '<script type="text/javascript" src="'.MRK_PLUGIN_URL.'/js/myJs.js'.'"></script>';
+        echo $outPut;
+    }
+
+    public function addJSUseReg()
+    {
+        wp_register_script('myJs', MRK_PLUGIN_URL.'/js/myJs.js', ['jquery'], '1.0', true);
+        wp_enqueue_script('myJs');
+    }
+
     public function addCssUseReg()
     {
 //        wp_enqueue_style('simple-widget', MRK_PLUGIN_URL.'css/simple-widget.css', ['simple-widget-01', 'simple-widget-02'], '1.0', 'all');
