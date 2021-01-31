@@ -45,7 +45,7 @@ class MrkWidget extends WP_Widget
         extract($args);
         $title = apply_filters('widget_title', $instance['title']);
         $title = (empty($title))? 'ABC simple' : $title;
-        $movie = (empty($instance['movie']))? '$nbsp;' : $instance['movie'];
+        $movie = (empty($instance['movie']))? '' : $instance['movie'];
         $css = ($instance['css']) ?? '';
         echo str_replace($this->widget_options['classname'], $this->widget_options['classname'].' '.$css, $before_widget);
         echo $before_title.$title.$after_title;

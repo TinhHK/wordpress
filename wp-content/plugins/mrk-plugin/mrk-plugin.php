@@ -21,8 +21,15 @@ if(is_admin()){
     new MrkMP();
 }
 require MRK_PLUGIN_DIR.'/widgets/MrkWidget.php';
+// register widget
 add_action('widgets_init', 'mrkWidget');
 function mrkWidget()
 {
     register_widget('MrkWidget');
+}
+// unregister widget
+//add_action('widgets_init', 'disableWidget');
+function disableWidget()
+{
+    unregister_widget('MrkWidget');
 }
