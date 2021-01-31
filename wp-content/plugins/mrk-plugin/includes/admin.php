@@ -17,15 +17,23 @@ class MrkMpAdmin
         register_setting('mrktinh_plugin_options', 'mrktinh_plugin_name',
             [$this, 'validateSetting']);
         $mainSection = 'mrk_plg_main_section';
+        // test database
+        global $wpdb;
+        $table = $wpdb->prefix.'mrk_article';
+        $query = "select * from {$table} where status = 1";
+        $result = $wpdb->get_row($query, ARRAY_A, 2);
+        echo "<pre>";
+        var_export($result);
+        echo "</pre>";die;
 
         // add section to view MAIN SETTING
-        add_settings_section($mainSection, 'Main setting',
-            [$this, 'main_section_view'], $this->_menuSlug);
-        // add a field to section
-        add_settings_field('mrk_plg_new_title', 'Site title',
-            [$this, 'makeForm'], $this->_menuSlug, $mainSection, ['name' => 'new_title']);
-        add_settings_field('mrk_plg_logo', 'Logo',
-                            [$this, 'makeForm'], $this->_menuSlug, $mainSection, ['name' => 'new_logo']);
+//        add_settings_section($mainSection, 'Main setting',
+//            [$this, 'main_section_view'], $this->_menuSlug);
+//        // add a field to section
+//        add_settings_field('mrk_plg_new_title', 'Site title',
+//            [$this, 'makeForm'], $this->_menuSlug, $mainSection, ['name' => 'new_title']);
+//        add_settings_field('mrk_plg_logo', 'Logo',
+//                            [$this, 'makeForm'], $this->_menuSlug, $mainSection, ['name' => 'new_logo']);
     }
 
     public function makeForm($args)
