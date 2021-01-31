@@ -16,7 +16,7 @@ class MrkWidget extends WP_Widget
         // global variables contain css and js
 //        global $wp_styles;
 //        global $wp_scripts;
-        //wp_enqueue_script('myJs', MRK_PLUGIN_URL.'/js/myJs.js', ['jquery'], '1.0', true);
+        //wp_enqueue_script('myJs', MRK_PLUGIN_URL.'js/myJs.js', ['jquery'], '1.0', true);
         add_action('wp_enqueue_scripts', [$this, 'addCssUseReg']);
         add_action('wp_head', [$this, 'addJs']);
         add_action('wp_enqueue_scripts', [$this, 'addJSUseReg']);
@@ -30,7 +30,7 @@ class MrkWidget extends WP_Widget
 
     public function addJSUseReg()
     {
-        wp_register_script('myJs', MRK_PLUGIN_URL.'/js/myJs.js', ['jquery'], '1.0', true);
+        wp_register_script('myJs', MRK_PLUGIN_URL.'js/myJs.js', ['jquery'], '1.0', true);
         wp_enqueue_script('myJs');
     }
 
