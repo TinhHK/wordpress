@@ -13,10 +13,12 @@ class MrkWidget extends WP_Widget
         parent::__construct($idBase, $name, $widgetOptions, $controlOptions);
 //        add_action('wp_head', [$this, 'changeCss']);
 //        add_action('wp_head', [$this, 'addCss']);
-        add_action('wp_enqueue_scripts', [$this, 'addCssUseReg']);
 //        wp_enqueue_script('myJs', MRK_PLUGIN_URL.'/js/myJs.js', ['jquery'], '1.0', true);
 //        add_action('wp_head', [$this, 'addJs']);
-        add_action('wp_enqueue_scripts', [$this, 'addJSUseReg']);
+        if (!empty(is_active_widget(false, false, $idBase, true))) {
+            add_action('wp_enqueue_scripts', [$this, 'addCssUseReg']);
+            add_action('wp_enqueue_scripts', [$this, 'addJSUseReg']);
+        }
     }
 
     public function addJSUseReg()
