@@ -3,3 +3,9 @@
     border: 1px solid rosybrown;
     padding: 10px;
 }
+.mrk-bg-red {
+    background-color: red;
+}
+.mrk-bg-blue {
+    background-color: blue;
+}

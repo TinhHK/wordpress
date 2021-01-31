@@ -17,10 +17,38 @@ class MrkWidget extends WP_Widget
     }
     public function addCssUseReg()
     {
-        wp_register_style('simple-widget', MRK_PLUGIN_URL.'css/simple-widget.css', [], '1.0', 'all');
-        wp_enqueue_style('simple-widget');
-    }
+//        wp_enqueue_style('simple-widget', MRK_PLUGIN_URL.'css/simple-widget.css', ['simple-widget-01', 'simple-widget-02'], '1.0', 'all');
+        wp_register_style('simple-widget', MRK_PLUGIN_DIR.'css/simple-widget.css', [], '1.0', 'all');
+        wp_register_style('simple-widget-01', MRK_PLUGIN_URL.'css/simple-widget-01.css', [], '1.0', 'all');
+        wp_register_style('simple-widget-02', MRK_PLUGIN_URL.'css/simple-widget-02.css', [], '1.0', 'all');
+//        wp_enqueue_style('simple-widget-01')
+        if (is_front_page()) {
+            wp_enqueue_style('simple-widget');
+        } elseif (is_page()) {
+            wp_enqueue_style('simple-widget-01');
+        } else {
+            wp_enqueue_style('simple-widget-02');
+        }
 
+
+    }
+    public function addCss()
+    {
+        $url = MRK_PLUGIN_URL.'css/simple-widget.css';
+        $output = '<link rel="stylesheet" href="'.$url.'" type="text/css" media="all">';
+        echo $output;
+    }
+    public function changeCss()
+    {
+        $output = "<style>
+                        .mrk-class-css {
+                            background-color: bisque;
+                            border: 1px solid rosybrown;
+                            padding: 10px;
+                        } 
+                    </style>";
+        echo $output;
+    }
     // show at front-end
     public function widget($args, $instance)
     {
@@ -39,8 +67,7 @@ class MrkWidget extends WP_Widget
     }
     // back-end
     public function form($instance)
-    {
-        $html = new MrkHtml();
+    {$html = new MrkHtml();
         // title field
         $inputId = $this->get_field_id('title');
         $inputName = $this->get_field_name('title');
