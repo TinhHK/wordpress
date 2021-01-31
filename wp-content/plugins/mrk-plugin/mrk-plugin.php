@@ -15,7 +15,9 @@ define('MRK_PLUGIN_INCLUDES', MRK_PLUGIN_DIR.'/includes');
 if(is_admin()){
     require MRK_PLUGIN_DIR.'/includes/admin.php';
     require MRK_PLUGIN_INCLUDES.'/MrkHtml.php';
+    require MRK_PLUGIN_DIR.'/widgets/MrkDashBoardWidget.php';
     new MrkMpAdmin();
+    new MrkDashBoardWidget();
 } else {
     require_once MRK_PLUGIN_DIR.'/includes/public.php';
     new MrkMP();
