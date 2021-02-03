@@ -14,6 +14,19 @@ class MrkDashBoardWidget
 
     public function display()
     {
-        echo "Hello World Mrktinh was here";
+        $posts = new WP_Query(['author' => 1]);
+        if ($posts->have_posts()) {
+            echo '<ul>';
+            while ($posts->have_posts()) {
+                $link = '#';
+                $posts->the_post();
+                $link = admin_url("?post=".get_the_ID()."&action=edit");
+                echo '<li><a href="'.$link.'">'. get_the_title(). '</a></li>';
+            }
+            echo '</ul>';
+        } else {
+            echo '<p>'.translate('No posts found'). '</p>';
+        }
+        wp_reset_postdata();
     }
 }
