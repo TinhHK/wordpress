@@ -35,3 +35,12 @@ function disableWidget()
 {
     unregister_widget('MrkWidget');
 }
+
+// widget last post for transient
+require_once MRK_PLUGIN_DIR.'/widgets/MrkWidgetLastPost.php';
+
+function lastPostInit()
+{
+    register_widget('MrkWidgetLastPost');
+}
+add_action('widgets_init', 'lastPostInit');
